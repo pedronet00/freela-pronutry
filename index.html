@@ -41,8 +41,8 @@
             font-size: 1rem;
         }
         .parcerias {
-            width: 80%;
-            margin: 3% auto;
+            width: 75%;
+            margin: 50px auto;
         }
         .category-card {
             margin-bottom: 30px;
@@ -190,12 +190,13 @@
       border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
     }
 
-    .slick-prev, .slick-next {
-  width: 40px; /* Largura do botão */
-  height: 40px; /* Altura do botão */
-  background-color: #82BB50; /* Fundo amarelo */
-  color: red; /* Cor do ícone da seta */
-  border: 1px solid #82BB50; /* Remove borda padrão */
+    /* Estilo das setas de navegação */
+.slick-prev, .slick-next {
+  width: 50px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  background-color: transparent; /* Fundo amarelo */
+  color: #82BB50; /* Cor verde do ícone */
+  border: 2px solid #82BB50; /* Borda verde */
   border-radius: 50%; /* Torna o botão redondo */
   display: flex;
   align-items: center;
@@ -204,6 +205,7 @@
   line-height: 1;
   cursor: pointer; /* Muda o cursor para indicar que é clicável */
   z-index: 1; /* Garante que as setas fiquem acima dos slides */
+  font-weight: bold; /* Adiciona negrito ao ícone */
 }
 
 /* Adiciona um ícone de seta para as setas */
@@ -215,11 +217,11 @@
   content: '→'; /* Ícone de seta para a direita */
 }
 
-/* Estilo das setas quando o carrossel é ativo */
-.slick-prev:hover, .slick-next:hover {
-  background-color: #82BB50; /* Fundo vermelho ao passar o mouse */
-  color: white; /* Cor da seta ao passar o mouse */
+.draggable{
+    width: 94%!important;
+    margin: auto!important;
 }
+
     </style>
   </head>
   <body>
@@ -312,47 +314,47 @@
         <div class="parcerias" id="parcerias">
             <h6 class="seja-nosso-parceiro">SEJA NOSSO PARCEIRO!</h6>
             <p style="font-size: 21px; margin-top: 40px;">
-                Convidamos você a se tornar um parceiro da Pronutry. Com uma marca já consolidada e reconhecida no mercado, oferecemos a você a oportunidade de ampliar seus negócios com produtos de alta qualidade e excelente aceitação. Associe-se a uma marca que valoriza a saúde natural e o bem-estar de todos. Estamos ansiosos para construir uma parceria de sucesso e prosperidade com você. Junte-se a nós e faça parte da família Pronutry! Veja as categorias de produtos que a Pronutry oferece a você:
+                Convidamos você a se tornar um parceiro da Pronutry. Com uma marca já consolidada e reconhecida no mercado, oferecemos a você a oportunidade de ampliar seus negócios com produtos de alta qualidade e excelente aceitação. Associe-se a uma marca que valoriza a saúde natural e o bem-estar de todos. Estamos ansiosos para construir uma parceria de sucesso e prosperidade com você. Junte-se a nós e faça parte da família Pronutry!<br/> Veja as categorias de produtos que a Pronutry oferece a você:
             </p>
             <div class="container mt-4">
                 <div class="row">
                     <div class="col">
-                        <img src="img-pedro/SUPLEMENTOS.png" style="width: 175px;" />
+                        <img src="img-pedro/SUPLEMENTOS.png" style="width: 150px;" />
                     </div>
                     <div class="col">
-                        <img src="img-pedro/NUTRACÊUTICOS.png" style="width: 175px;"/>
+                        <img src="img-pedro/NUTRACÊUTICOS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/FITOS CAPSULAS.png" style="width: 175px;"/>
+                        <img src="img-pedro/FITOS CAPSULAS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/FITOS CONCENTRADOS.png" style="width: 175px;"/>
+                        <img src="img-pedro/FITOS CONCENTRADOS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/CHÁS.png" style="width: 175px;"/>
+                        <img src="img-pedro/CHÁS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/BEBIDAS.png" style="width: 175px;"/>
+                        <img src="img-pedro/BEBIDAS.png" style="width: 150px;"/>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 30px;">
                     <div class="col">
-                        <img src="img-pedro/COSMÉTICOS.png" style="width: 175px;"/>
+                        <img src="img-pedro/COSMÉTICOS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/EXTRATOS.png" style="width: 175px;"/>
+                        <img src="img-pedro/EXTRATOS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/ÓLEOS.png" style="width: 175px;"/>
+                        <img src="img-pedro/ÓLEOS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/SOLÚVEIS.png" style="width: 175px;"/>
+                        <img src="img-pedro/SOLÚVEIS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/ALIMENTOS.png" style="width: 175px;"/>
+                        <img src="img-pedro/ALIMENTOS.png" style="width: 150px;"/>
                     </div>
                     <div class="col">
-                        <img src="img-pedro/VITAMINAS.png" style="width: 175px;"/>
+                        <img src="img-pedro/VITAMINAS.png" style="width: 150px;"/>
                     </div>
                 </div>
             </div>
@@ -366,34 +368,52 @@
     </div>
 
     <!-- VITRINE -->
-    <div class="your-class" style="width: 80%; margin: auto;">
-        <div><img src="img-pedro/CATUMAX.png" alt="Slide 1"></div>
-        <div><img src="img-pedro/MAXPECAN.png" alt="Slide 2"></div>
-        <div><img src="img-pedro/CATUMAX FEMME.png" alt="Slide 3"></div>
-        <div><img src="img-pedro/CANELA DE VELHO.png" alt="Slide 4"></div>
-        <div><img src="img-pedro/PECAN.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/DIGERIN.png" alt="Slide 5"></div>
+    <div style="width: 80%; margin: auto;">
+        <h6 style="font-weight: 900; margin-top: 124px; font-size: 28px; margin-left: 5%;">VITRINE DE PRODUTOS</h6>
+        <p style="font-size: 21px; margin-top: 21px; margin-left: 5%;">Conheça os produtos da marca Pronutry</p>
+        <div class="your-class" >
+            <div><img src="img-pedro/CATUMAX.png" alt="Slide 1"></div>
+            <div><img src="img-pedro/MAXPECAN.png" alt="Slide 2"></div>
+            <div><img src="img-pedro/CATUMAX FEMME.png" alt="Slide 3"></div>
+            <div><img src="img-pedro/CANELA DE VELHO.png" alt="Slide 4"></div>
+            <div><img src="img-pedro/PECAN.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/DIGERIN.png" alt="Slide 5"></div>
+        </div>
     </div>
 
-    <div class="your-class-2" style="width: 80%; margin: auto;">
-        <div><img src="img-pedro/ALMAROMI.png" alt="Slide 1"></div>
-        <div><img src="img-pedro/APINIL.png" alt="Slide 2"></div>
-        <div><img src="img-pedro/APISNUTRY.png" alt="Slide 3"></div>
-        <div><img src="img-pedro/AROMED.png" alt="Slide 4"></div>
-        <div><img src="img-pedro/BELNUT.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
-        <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
+    <div style="width: 80%; margin: auto;">
+        <h6 style="font-weight: 900; margin-top: 126px; font-size: 28px; margin-left: 5%;">MARCAS QUE A PRONUTRY TRABALHA</h6>
+        <div class="your-class-2" style="margin-top: 66px;">
+            <div><img src="img-pedro/ALMAROMI.png" alt="Slide 1"></div>
+            <div><img src="img-pedro/APINIL.png" alt="Slide 2"></div>
+            <div><img src="img-pedro/APISNUTRY.png" alt="Slide 3"></div>
+            <div><img src="img-pedro/AROMED.png" alt="Slide 4"></div>
+            <div><img src="img-pedro/BELNUT.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/BIO INSTINTO.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/BIOCÊUTICA.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/BIONATURE.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/BUGROON.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/CHAMEL.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/DARKNESS.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/SÃO ROQUE.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/INTEGRALMEDICA.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/POLYFLORA.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/PRODAPYS.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/PROMEL.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/ROSANI.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/SÃO FRANCISCO.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/SAÚDE DA TERRA.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/VICCINO.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/SERRA DE MINAS.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/SUPRAERVAS.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/UNILIFE.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/PRONUTRY.png" alt="Slide 5"></div>
+            <div><img src="img-pedro/BIO LIFE.png" alt="Slide 5"></div>
+        </div>
     </div>
+    
       
       
-    
-
-    
 
     <!-- SOBRE A PRONUTRY -->
     <div class="sobre-nos" id="sobre-nos">
@@ -468,7 +488,7 @@
     
     
 
-    <a href="https://wa.me/SEU_NUMERO_DE_TELEFONE" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/5518998068039" target="_blank" class="whatsapp-float">
         <iframe src="https://lottie.host/embed/ac70e7e4-8ee8-477b-a6ec-75ccf922f468/wXQny6V74N.json"></iframe>
     </a>
 
@@ -485,11 +505,35 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $('.your-class').slick({
-        slidesToShow: 3, // Mostra 3 slides por vez
-        slidesToScroll: 1, // Desliza um slide por vez
-        infinite: true, // Habilita a rotação infinita
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: '<button type="button" class="slick-prev" style="border: none;background-color: transparent;"><img src="img-pedro/SETA ESQUERDA.png"/></button>',
+        nextArrow: '<button type="button" class="slick-next" style="border: none;background-color: transparent;"><img src="img-pedro/SETA DIREITA.png"/></button>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+  
+      $('.your-class-2').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: '<button type="button" class="slick-prev" style="border: none;background-color: transparent;"><img src="img-pedro/SETA ESQUERDA.png"/></button>',
+        nextArrow: '<button type="button" class="slick-next" style="border: none;background-color: transparent;"><img src="img-pedro/SETA DIREITA.png"/></button>',
         responsive: [
           {
             breakpoint: 1024,
